@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+
+  height: 100%;
+  width: 100%;
+  font-size: 150%; 
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  
+  border: 1px solid #FF0;
+  color: #FF0;
+  width: 300px;
+
+  margin-bottom: 100px;
+
+}
+
+a {
+  background: #FF0;
+  color: black;
+}
