@@ -21,10 +21,14 @@ fieldset {
   
   border: 1px solid #FF0;
   color: #FF0;
-  width: 300px;
+  width: 380px;
 
   margin-bottom: 100px;
   box-shadow: 10px 10px 20px #330
+}
+
+legend {
+  margin: 0 auto
 }
 
 a {
