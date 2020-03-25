@@ -12,18 +12,15 @@ body {
   width: 100%;
   font-size: 150%; 
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+
 }
 
 fieldset {
   
   border: 1px solid #FF0;
   color: #FF0;
-  width: 380px;
-
-  margin-bottom: 100px;
+  max-width: 380px;
+  margin: 0 5px 100px 5px;
   box-shadow: 10px 10px 20px #330
 }
 
@@ -31,7 +28,31 @@ legend {
   margin: 0 auto
 }
 
+legend img {
+  max-width: 100%;
+}
+
 a {
   background: #FF0;
   color: black;
+}
+
+body.banner {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body.landing {
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body.landing main {
+  background: white;
+  margin: 0 30px 30px;
+  border-radius: 20px;
+  flex: 1;
+
 }
