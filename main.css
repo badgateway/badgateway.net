@@ -35,6 +35,7 @@ legend img {
 a {
   background: #FF0;
   color: black;
+  padding: 1px;
 }
 
 body.banner {
