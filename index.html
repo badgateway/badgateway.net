@@ -12,20 +12,47 @@
   </head>
 
   <body class="banner">
+    <header>
+      <nav>
+        <ul class="main menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Merch</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="util menu">
+          <li>EN</li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <fieldset>
+          <legend><img alt="Bad Gateway" title="Bad Gateway" src="img/bad-gateway.png" /></legend>
+          <p>Bad Gateway is a Toronto-based agency. We build good APIs and websites.</p>
+          <p><a href="mailto:info@badgateway.net">Email us</a><a href="https://merch.badgateway.net/">Merch</a></p>
+        </fieldset>
+      </section>
+      <section id="contact">
+        <form action="#">
+          <h1>Work with us?</h1>
+          <fieldset>
+            <li><label for="name"><input type="text" id="name" name="name"><span>Name</span></label></li>
+            <li><label for="email"><input type="email" id="email" name="email"><span>Email</span></label></li>
+            <li><label for="project"><select id="project"><option>N/A</option></select><span>Project type</span></label></li>
+            <li><label for="budget"><input type="number" id="budget" name="budget"><span>Budget</span></label></li>
+            <li><label for="subject"><input type="text" id="subject" name="subject"><span>Subject</span></label></li>
+            <li><label for="phone"><input type="phone" id="phone" name="phone"><span>Phone</span></label></li>
+            <label for="message"><textarea name="message" id="message" cols="30" rows="10"></textarea><span></span></label>
+          </fieldset>
+          <button type="submit">Get Quote</button>
+        </form>
 
-    <fieldset>
-      <legend><img alt="Bad Gateway" title="Bad Gateway" src="img/bad-gateway.png" /></legend>
-
-      <p>
-        Bad Gateway is a Toronto-based agency. We build good APIs and websites.
-      </p>
-      <p>
-        <a href="mailto:info@badgateway.net">Email us</a>
-        <a href="https://merch.badgateway.net/">Merch</a>
-      </p>
-
-    </fieldset>
-
+      </section>
+    </main>
   </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSBKK4RSYN"></script>

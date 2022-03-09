@@ -1,3 +1,7 @@
+:root {
+  --brand-main-color: #FF0;
+}
+
 html {
   height: 100%;
 }
@@ -13,6 +17,23 @@ body {
   font-size: 150%; 
   display: flex;
 
+}
+
+header {
+  position: fixed;
+  background: var(--brand-main-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul.menu {
+  display: flex;
+  gap: 3ex;
 }
 
 fieldset {
