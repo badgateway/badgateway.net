@@ -70,7 +70,7 @@
 
               <label for="project">
                 <select id="project" required>
-                    <option disabled selected value="">Project type</option>
+                    <option disabled selected value="">Select activity</option>
                     <option value="consultancy">Consultancy</option>
                     <option value="api-development">API Development</option>
                     <option value="web-development">Web App Development</option>
@@ -80,10 +80,28 @@
               </label>
 
             </div>
-            <div><label for="budget"><input type="number" id="budget" name="budget" placeholder="Budget estimate  ($)" step="1000" min="5000" required><span>Budget estimate</span></label></div>
+            <div>
+              <label for="budget"><input type="number" id="budget" name="budget" placeholder="Budget estimate  ($)" step="250" min="1000" required>
+                <!-- 
+                  rare rakkers die promotors 
+                  ze willen weten wat een show kost
+                  als ik ze meld, schiet er minstens één poot los
+                  niet huilen, je wilt grote jongens dan
+                  moet je ook betalen voor een duppie eerste rang
+                  niet in dit leven gaat niet gebeuren
+                  voor minder dan een rug, gaat een aap maar door één deur en
+                  dat is de deur van de plee ik rook mn hei lees mn buku
+                  even lusu met een flexe puku 
+
+                  Aap-o-theek
+
+                -->
+                <span>Budget estimate</span>
+              </label>
+            </div>
             <div><label for="subject"><input type="text" id="subject" name="subject" placeholder="Subject" minlength="2" required><span>Subject</span></label></div>
             <div><label for="phone"><input type="tel" id="phone" name="phone" placeholder="Phone" minlength="10"><span>Phone</span></label></div>
-            <label for="message"><textarea name="message" id="message" rows="9" placeholder="Message" required minlength="2"></textarea><span>Message</span></label>
+            <label for="message"><textarea name="message" id="message" rows="7" placeholder="Message" required minlength="10"></textarea><span>Message</span></label>
           </fieldset>
           <h3><button type="submit">Send</button></h3>
         </form>
