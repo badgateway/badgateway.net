@@ -164,25 +164,20 @@ form input, form select, form textarea {
   transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-form input:valid, form select:valid, form textarea:not(:empty) {
-  border-style: solid;
-}
-
-form input:empty, form select:empty, form textarea:empty {
+form input:empty:not(:invalid), form select:empty:not(:invalid), form textarea:empty:not(:invalid) {
   border-style: dotted;
-}
-
-form input:empty:focus, form select:empty:focus, form textarea:empty:focus {
 }
 
 form input:focus, form select:focus, form textarea:focus {
   border-color: #fff;
 }
 
+form input:valid, form select:valid, form textarea:valid {
+  border-style: solid!important;
+}
 
-form input:invalid:not(:empty), form select:not(:focus), form textarea:invalid:not(:focus) {
+form input:invalid:not(:empty):focus, form select:focus:invalid, form textarea:invalid:not(:focus):not(:empty) {
   border-style: dashed;
-  border-color: white;
 }
 
 option {
@@ -245,6 +240,22 @@ form label :invalid + span::after {
   content: '!';
 }
 
+form button {
+  background: transparent;
+  color: white;
+  border: 4px solid currentColor;
+  border-radius: .5ex;
+  cursor: pointer;
+  font-size: x-large;
+  padding: 1ex 1em;
+  transition: all .2s;
+}
+
+form:invalid button {
+  border-style: dashed;
+  opacity: .5;
+}
+
 fieldset {
   border: none;
   width: 70vw;
@@ -265,5 +276,6 @@ a, button {
   border: none;
   padding: 1ex;
   font-family: inherit;
+  font-size: inherit;
   font-weight: unset;
 }
