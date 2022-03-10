@@ -1,48 +1,254 @@
 :root {
   --brand-main-color: #FF0;
+  --color-1: #FF0;
+  --color-2: #deef00;
+  --color-3: #f7a500;
+  --color-4: #f77b00;
+  --color-5: #e73100;
+  --color-6: #00F;
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   background: #000;
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   padding: 0;
   margin: 0;
 
   height: 100%;
   width: 100%;
-  font-size: 150%; 
-  display: flex;
+  font-size: 150%;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 
 }
+
+
+/* high level layout:  */
+/* header, main [footer] */
 
 header {
   position: fixed;
-  background: var(--brand-main-color);
+  background: white;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
-nav {
+
+main {
+  color: black;
+}
+
+footer {
+  background-color: var(--color-6);
+}
+
+/* header tings */
+
+header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 71vw;
+  margin: auto;
 }
-ul.menu {
+
+header nav ul.menu {
   display: flex;
   gap: 3ex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  background-color: transparent;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  color: black;
+  transition: text-decoration .2s;
+  line-height: 3em;
+}
+
+header nav a:hover {
+  text-decoration-color: #000;
+}
+
+header nav img {
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+/* main content tings */
+
+h1 {
+  margin-block: 2em;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-content: inherit;
+  align-items: inherit;
+  justify-content: center;
+  padding: 5ex 0;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(1) {background-color: var(--color-1);/*! background-image: url(img/toronto.jpg); */background-blend-mode: darken;background-attachment: fixed;background-size: cover;background-position: center;}
+section:nth-child(2) {background-color: var(--color-2);/*! background-image: url(img/toronto.png); *//*! background-blend-mode: multiply; */}
+section:nth-child(3) {background-color: var(--color-3);}
+section:nth-child(4) {background-color: var(--color-4);}
+section:nth-child(5) {background-color: var(--color-5);}
+section:nth-child(6) {background-color: var(--color-6); color: white;}
+
+.card img {
+  mix-blend-mode: hard-light;
+  width: 256px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;  
+}
+
+form fieldset {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 3em 3em 3em 12em;
+  grid-gap: 1em;
+}
+
+form fieldset div {
+  display: flex;
+  align-items: flex-end;
+}
+
+form fieldset label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+
+form input, form select, form textarea {
+  line-height: 2;
+  height: 3em;
+  background-color: transparent;
+  border-width: 0 0 2px 0;
+  color: white;
+  border-color: #fff6;
+  border-style: dotted;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+form input:valid, form select:valid, form textarea:not(:empty) {
+  border-style: solid;
+}
+
+form input:empty, form select:empty, form textarea:empty {
+  border-style: dotted;
+}
+
+form input:empty:focus, form select:empty:focus, form textarea:empty:focus {
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #fff;
+}
+
+
+form input:invalid:not(:empty), form select:not(:focus), form textarea:invalid:not(:focus) {
+  border-style: dashed;
+  border-color: white;
+}
+
+option {
+  color: initial;
+}
+
+::placeholder {
+  color: white;
+}
+
+form label[for=message] {
+  grid-column: 1 / -1;
+  align-self: end;
+}
+
+form textarea {
+  height: unset;
+}
+
+form label *+span {
+  position: absolute;
+  transition: all .2s;
+  font-size: 66%;
+  color: white;
+}
+
+form label :placeholder-shown + span,
+form label select:invalid + span {
+  opacity: 0;
+}
+
+form label :not(:placeholder-shown) + span,
+form label select:focus + span,
+form label select:not(:invalid) + span {
+  opacity: .85;
+  transform: translateY(-150%);
+}
+
+form label span::after {
+  content: '\2713';
+  background-color: white;
+  color: var(--color-5);
+  opacity: 0;
+  /* padding: 0px 0.6ex; */
+  transition: all .1s;
+  border-radius: 50%;
+  margin-inline-start: 1ex;
+  width: 1.25em;
+  display: inline-block;
+  text-align: center;
+}
+
+form label :valid:focus + span::after,
+form label :invalid:not(:focus) + span::after {
+  opacity: 1;
+  transition: all .5s .25s;
+}
+
+form label :invalid + span::after {
+  content: '!';
 }
 
 fieldset {
-  
-  border: 1px solid #FF0;
-  color: #FF0;
-  max-width: 380px;
-  margin: 0 5px 100px 5px;
-  box-shadow: 10px 10px 20px #330
+  border: none;
+  width: 70vw;
+  padding: 0;
 }
 
 legend {
@@ -53,28 +259,11 @@ legend img {
   max-width: 100%;
 }
 
-a {
-  background: #FF0;
-  color: black;
-  padding: 1px;
-}
-
-body.banner {
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-body.landing {
-  flex-direction: column;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-body.landing main {
-  background: white;
-  margin: 0 30px 30px;
-  border-radius: 20px;
-  flex: 1;
-
+a, button {
+  background: black;
+  color: var(--brand-main-color);
+  border: none;
+  padding: 1ex;
+  font-family: inherit;
+  font-weight: unset;
 }

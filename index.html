@@ -7,51 +7,93 @@
     <link href="img/icon.png" rel="icon apple-touch-icon" sizes="128x128" />
     <link rel="manifest" href="/manifest.webmanifest">
 
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta charset="utf-8" />
   </head>
 
-  <body class="banner">
+  <body class="one-pager">
     <header>
       <nav>
         <ul class="main menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Merch</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home"><img alt="Bad Gateway" title="Bad Gateway" src="img/icon.png" height="32px" /></a></li>
+          
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="util menu">
-          <li>EN</li>
-          <li></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="//merch.badgateway.net" target="blank">Merch</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="home">
         <fieldset>
-          <legend><img alt="Bad Gateway" title="Bad Gateway" src="img/bad-gateway.png" /></legend>
-          <p>Bad Gateway is a Toronto-based agency. We build good APIs and websites.</p>
-          <p><a href="mailto:info@badgateway.net">Email us</a><a href="https://merch.badgateway.net/">Merch</a></p>
+          <h1>Bad Gateway is a Toronto-based agency. We build good APIs and websites.</h1>
+          <p><a href="#contact">work with us</a></p>
         </fieldset>
       </section>
+      <section id="services">
+        <h1>Services</h1>
+      </section>
+      <section id="about">
+        <h1>About us</h1>
+        <div class="container">
+          <div class="person card">
+            <img src="img/team/evert.png" />
+          </div>
+          <div class="person card">
+            <img src="img/team/phil.png" />
+          </div>
+          <div class="person card">
+            <img src="img/team/mike.png" />
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1><strong>Featured</strong> projects</h1>
+      </section>
       <section id="contact">
+        <h1>Work with us</h1>
         <form action="#">
-          <h1>Work with us?</h1>
           <fieldset>
-            <li><label for="name"><input type="text" id="name" name="name"><span>Name</span></label></li>
-            <li><label for="email"><input type="email" id="email" name="email"><span>Email</span></label></li>
-            <li><label for="project"><select id="project"><option>N/A</option></select><span>Project type</span></label></li>
-            <li><label for="budget"><input type="number" id="budget" name="budget"><span>Budget</span></label></li>
-            <li><label for="subject"><input type="text" id="subject" name="subject"><span>Subject</span></label></li>
-            <li><label for="phone"><input type="phone" id="phone" name="phone"><span>Phone</span></label></li>
-            <label for="message"><textarea name="message" id="message" cols="30" rows="10"></textarea><span></span></label>
+            <div>
+              <label for="name">
+                <input type="text" id="name" name="name" placeholder="Name" minlength="3" required>
+                <span>Name</span>
+              </label>
+            </div>
+            <div><label for="email"><input type="email" id="email" name="email" placeholder="Email" required><span>Email</span></label></div>
+            <div>
+
+              <label for="project">
+                <select id="project" required>
+                    <option disabled selected value="">Project type</option>
+                    <option value="consultancy">Consultancy</option>
+                    <option value="api-development">API Development</option>
+                    <option value="web-development">Web App Development</option>
+                    <option value="other">Round of Smash Bros</option>
+                </select>
+                <span>Project type</span>
+              </label>
+
+            </div>
+            <div><label for="budget"><input type="number" id="budget" name="budget" placeholder="Budget" step="1000" min="5000" value=""><span>Budget</span></label></div>
+            <div><label for="subject"><input type="text" id="subject" name="subject" placeholder="Subject" minlength="2"><span>Subject</span></label></div>
+            <div><label for="phone"><input type="tel" id="phone" name="phone" placeholder="Phone" minlength="10"><span>Phone</span></label></div>
+            <label for="message"><textarea name="message" id="message" rows="7" placeholder="Message" required minlength="2"></textarea><span>Message</span></label>
           </fieldset>
           <button type="submit">Get Quote</button>
         </form>
 
       </section>
+      
+      <section id="footer">
+        <div class="container">&copy 1985 - 2022 Bad MF Gateway</div>
+      </section>
+      
     </main>
   </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
