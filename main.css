@@ -463,8 +463,7 @@ form:invalid button {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  transform: translateZ(1px) scale(1.25);
-  transform-origin: left;
+  transform: translateZ(-2px) scale(1.75);
   background-blend-mode: multiply;
   background-color: var(--color-1);
   opacity: 0.25;
