@@ -4,6 +4,7 @@
   <head>
     <title>Bad Gateway</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="animation.css" rel="stylesheet" type="text/css" />
     <link href="img/icon.png" rel="icon apple-touch-icon" sizes="128x128" />
     <link rel="manifest" href="/manifest.webmanifest">
 
@@ -12,6 +13,7 @@
   </head>
 
   <body class="one-pager">
+    <!-- header, main menu -->
     <header>
       <nav>
         <ul class="main menu">
@@ -28,33 +30,86 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section id="home">
+      <!-- home -->
+      <section id="home" class="parallax">
         <fieldset>
-          <h1>Bad Gateway is a Toronto-based agency. We build good APIs and websites.</h1>
+          <h1><strong>Bad Gateway</strong> is a <strong>Toronto</strong>-based agency. We build <em>good</em> <strong>APIs</strong> and <strong>websites</strong>.</h1>
           <p><a href="#contact">work with us</a></p>
         </fieldset>
       </section>
+      
+      <!-- services -->
       <section id="services">
         <h1>Services</h1>
+
       </section>
+      
+      <!-- about -->
       <section id="about">
-        <h2>We use minimal code to achieve maximum results.</h2>
-        <div class="container">
+        <h2><em>Minimal</em> code for <strong>maximum</strong> result.</h2>
+        <h3>Meet the <strong>team</strong></h3>
+        <div class="container flex-row">
           <div class="person card">
-            <img src="img/team/evert.png" />
+            <figure>
+              <img src="img/team/evert-color.png" />
+            </figure>
+            <div class="socials">
+              <a href="//twitter.com/evertp" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#twitter" />
+              </a>
+              <a href="//linkedin.com/in/evert-pot/" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#linkedin" />
+              </a>
+              <a href="//github.com/evert" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#github" />
+              </a>
+            </div>
+            <h4>Evert <strong>Pot</strong></h4>
+            <h5><em>Founder</em></h5>
           </div>
           <div class="person card">
-            <img src="img/team/phil.png" />
+            <figure>
+              <img src="img/team/phil-color.png" />
+            </figure>
+            <div class="socials">
+              <a href="//linkedin.com/in/philippeschwyter/" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#linkedin" />
+              </a>
+              <a href="//github.com/pschwyter" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#github" />
+              </a>
+            </div>
+            <h4>Phil <strong>Schwyter</strong></h4>
+            <h5><em>Partner</em></h5>
           </div>
           <div class="person card">
-            <img src="img/team/mike.png" />
+            <figure>
+              <img src="img/team/mike-color.png" />
+            </figure>
+            <div class="socials">
+              <a href="//linkedin.com/in/michaelhumiston" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#linkedin" />
+              </a>
+              <a href="//github.com/mhum" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/socials-black.svg#github" />
+              </a>
+            </div>
+            <h4>Michael <strong>Humiston</strong></h4>
+            <h5><em>Partner</em></h5>
           </div>
         </div>
       </section>
+      
+      <!-- projects -->
       <section id="projects">
-        <h1><strong>Featured</strong> projects</h1>
+        <h1><strong>Featured</strong> project</h1>
+        <h2>Kees Studdy</h2>
+
       </section>
+      
+      <!-- contact -->
       <section id="contact">
         <h1>Work with us</h1>
         <form action="#">
@@ -105,11 +160,34 @@
           </fieldset>
           <h3><button type="submit">Send</button></h3>
         </form>
-
       </section>
       
+      <!-- footer -->
       <section id="footer">
-        <div class="container">&copy 1985 - 2022 Bad MF Gateway</div>
+        
+        <nav>
+          <ul class="footer menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="socials">
+            <a href="//twitter.com/badgateway_to" target="_blank" rel="noopener noreferrer" title="Follow us on Twitter">
+              <img src="img/icons/socials.svg#twitter" />
+            </a>
+            <a href="//linkedin.com/company/bad-gateway/" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn">
+              <img src="img/icons/socials.svg#linkedin" />
+            </a>
+            <a href="//github.com/badgateway/" target="_blank" rel="noopener noreferrer" title="Clone us at Github">
+              <img src="img/icons/socials.svg#github" />
+            </a>
+          </div>
+        </nav>
+        <div>
+          <small>&copy; 1985 - 2022 Bad Gateway Inc.</small>
+        </div>
       </section>
       
     </main>
@@ -122,5 +200,36 @@
   gtag('js', new Date());
 
   gtag('config', 'G-JSBKK4RSYN');
+</script>
+
+<script>
+  let lastKnownScrollPosition = 0;
+  let ticking = false;
+
+  const header = document.querySelector('header');
+  const main = document.querySelector('main');
+
+  function doSomething(scrollPos) {
+
+      if(scrollPos > 300) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    
+  }
+
+  main.addEventListener('scroll', function(e) {
+    lastKnownScrollPosition = main.scrollTop;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        doSomething(lastKnownScrollPosition);
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  });
 </script>
 </html>
