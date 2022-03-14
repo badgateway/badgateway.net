@@ -1,0 +1,11 @@
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scanlines {
+  to {
+    background-position: 100% 100%;
+  }
+}
