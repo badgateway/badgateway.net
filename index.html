@@ -15,6 +15,9 @@
   <body class="one-pager" unresolved>
     <!-- header, main menu -->
     <header>
+      <button class="toggle-menu">
+        <img src="img/icons/menu.svg" alt="">
+      </button>
       <img src="img/bad-gateway.png" style="display: none;" alt="Bad Gateway logo" />
       <nav class="flex-row">
         <ul class="main menu">
@@ -256,7 +259,7 @@
         <h1>Our <strong>clients</strong></h1>
         <ul class="flex-row clients">
           <li>
-            <a href="#projects"><img src="img/clients/svg/wealthsimple.svg" alt="Wealthsimple logo"></a>
+            <a href="#projects"><img src="img/clients/svg/wealthsimple-monogram.svg" alt="Wealthsimple logo"></a>
             <small>Wealthsimple</small>
           </li>
           <li>
@@ -400,6 +403,9 @@
   const iframe = document.querySelector('iframe');
   const calendarLink = document.querySelector('a[href="https://calendly.com/evert-bg/30min"]');
   const closebtn = document.querySelector('button[type="button"]');
+  const menubtn = document.querySelector('button.toggle-menu');
+
+  const menuLinks = document.querySelectorAll('nav a');
 
   function resizeHeader(scrollPos) {
 
@@ -440,6 +446,16 @@
   closebtn.addEventListener('click', function() {
     form.classList.remove('show-feedback');
   })  
+
+  menubtn.addEventListener('click', function() {
+    header.classList.toggle('show-menu');
+  });
+
+  for (const link of menuLinks) {
+    link.addEventListener('click', function() {
+      header.classList.remove('show-menu');
+    })
+  }
 
 </script>
 </html>
