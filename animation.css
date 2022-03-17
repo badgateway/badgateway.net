@@ -12,6 +12,13 @@
 
 @keyframes slide {
   to {
-    transform: translateY(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* would be nice to be a bit less specific, but oh well*/
+@keyframes wobbleTV {
+  to {
+    transform: translateX(0) translateY(2%) scale(1.8);
   }
 }
