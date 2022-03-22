@@ -277,24 +277,6 @@ section:nth-child(6) {
   color: #fffb;
 }
 
-/* a weird bug where this next pseudo element would not render in the correct place in the *first* 
-  <section>, there might be a clash with the parallax (which itself did not work in Chrome and is 
-  now in a permanent non-parallaxing state, so I'm filtering it out of the selector here. 
-  Thoughts and prayers. */
-
-section:not(:first-child)::before {
-  content: '';
-  position: sticky;
-  left: 0;
-  top: 0;
-  background: #aaa;
-  width: 100%;
-  height: 4em;
-  z-index: 1;
-  background: linear-gradient(var(--sectionColor) 50%, #0000);
-  opacity: .95;
-}
-
 section > * {
   margin: 0 3em;
 }
