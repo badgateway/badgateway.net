@@ -6,7 +6,10 @@
     <title>Bad Gateway</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="animation.css" rel="stylesheet" type="text/css" />
+
     <link href="img/icon.png" rel="icon apple-touch-icon" sizes="128x128" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.webmanifest">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -29,7 +32,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="util menu">
-          <li><a href="#">EN</a></li>
+          <!-- <li><a href="#">EN</a></li> -->
           <li><a href="https://merch.badgateway.net" target="blank">Merch</a></li>
         </ul>
       </nav>
@@ -48,7 +51,7 @@
       <section id="services">
         <h1>Services</h1>
         <!-- <h2>Let's turn your <em>application idea</em> into an <strong>MVP to scale</strong>.</h2> -->
-        <ul class="flex-row">
+        <ul class="flex-row services">
           <li>
             <h4><strong>Development</strong></h4>
             <ul>
@@ -113,6 +116,10 @@
               <a href="https://github.com/pschwyter" target="_blank" title="Phil's Github page">
                 <img src="img/icons/socials-black.svg#github" />
               </a>
+              <a href="http://philschwyter.com/" target="_blank" title="Phil's Website">
+                <img src="img/icons/socials-black.svg#web" />
+              </a>
+              
             </div>
             <h4>Phil <strong>Schwyter</strong></h4>
             <h5><em>Partner</em></h5>
@@ -165,7 +172,7 @@
         </div>
 
         <h5>We work with a wide range of technologies and these are definitely our favourites:</h5>
-        <ul class="flex-row services">
+        <ul class="flex-row technologies">
           <li class="node">
             <svg width="144px" height="128px" viewBox="0 0 256 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
               <title>NodeJS logo</title>
@@ -263,32 +270,36 @@
             <small>Wealthsimple</small>
           </li>
           <li>
-            <a target="_blank" href="https://www.toronto.ca/"><img src="img/clients/svg/toronto-badge.svg" alt="City of Toronto logo"></a>
-            <small>City of Toronto</small>
-          </li>
-          <li>
             <a target="_blank" href="https://orderup.ai/"><img src="img/clients/svg/orderup-logo-white.svg" alt="OrderUp logo"></a>
             <small>OrderUp</small>
           </li>
           <li>
-            <a target="_blank" href="https://www.embreate.com/"><img src="img/clients/svg/embreate-logo.svg" alt="Embreate logo"></a>
-            <small>Embreate</small>
+            <a target="_blank" href="https://www.toronto.ca/"><img src="img/clients/svg/toronto-badge.svg" alt="City of Toronto logo"></a>
+            <small>City of Toronto</small>
+          </li>
+          <li>
+            <a target="_blank" href="https://nodemedcom.com/"><img src="img/clients/svg/nodemedcom-logo.svg" alt="Nodemedcom, the next generation of advice for pharma."></a>
+            <small>Nodemedcom</small>
           </li>
           <li>
             <a target="_blank" href="https://underknown.com/"><img src="img/clients/svg/underknown-icon-white.svg" alt="Underknown logo"></a>
             <small>Underknown</small>
           </li>
           <li>
+            <a target="_blank" href="https://www.embreate.com/"><img src="img/clients/svg/embreate-logo.svg" alt="Embreate logo"></a>
+            <small>Embreate</small>
+          </li>
+          <li>
             <a target="_blank" href="https://zerolens.com/"><img src="img/clients/svg/zerolens-white.svg" alt="Zerolens logo"></a>
             <small>Zerolens</small>
           </li>
           <li>
-            <a target="_blank" href="https://www.plaifactory.com/"><img src="img/clients/svg/plaifactory-logo-white.svg" alt="Plai factory logo"></a>
-            <small>Plai factory</small>
-          </li>
-          <li>
             <a target="_blank" href="https://curveballjs.org/"><img src="img/clients/svg/curveball-logo-white.svg" alt="Curveball is a micro-framework for building APIs with Typescript"></a>
             <small>Curveball</small>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.plaifactory.com/"><img src="img/clients/svg/plaifactory-logo-white.svg" alt="Plai factory logo"></a>
+            <small>Plai factory</small>
           </li>
         </ul>
       </section>
@@ -347,10 +358,10 @@
                 <span>Message</span>
               </label>
             </div>
-            <iframe id="form-feedback" name="form-feedback" src=""></iframe>
-            <button type="button">&times; close</button>
           </fieldset>
           <h3><button type="submit">Send</button></h3>
+          <iframe id="form-feedback" name="form-feedback" src=""></iframe>
+          <button type="button">&times; close</button>
         </form>
       </section>
       
