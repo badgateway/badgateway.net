@@ -506,7 +506,7 @@ h1.hero:focus-within a:after {
 /* Clients / projects section */
 
 .clients {
-  max-width: 50em;
+  max-width: 40em;
 }
 
 .clients a {
