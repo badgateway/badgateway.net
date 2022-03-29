@@ -380,7 +380,7 @@ h1.hero:focus-within a:after {
 
 .person.card figure {
   padding: 0;
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   background-color: var(--sectionColor);
   background-image: linear-gradient(transparent 50%, #00000057 50%), linear-gradient(transparent 92%, #fdefd45e 97%, transparent 100%);
   border: 0px solid transparent;
@@ -394,7 +394,6 @@ h1.hero:focus-within a:after {
   box-shadow: 0 0px 0px 0px transparent;
   transition: box-shadow .5s, transform .2s;
   animation-iteration-count: 0;
-  transform: scale(1);
 }
 
 .person.card:hover figure,
@@ -402,7 +401,7 @@ h1.hero:focus-within a:after {
   animation-play-state: running;
   box-shadow: 0 2px 16px 1px rgba(0, 0, 0, 0.43);
   animation-iteration-count: infinite;
-  transform: scale(1);
+  
 }
 
 .person.card figure img {
@@ -420,22 +419,22 @@ h1.hero:focus-within a:after {
 .person.card:focus-within figure img {
   transform: scale(1.8) translateY(2%);
   opacity: .9;
-  animation: fade .3s infinite;
+  animation: fade .3s infinite alternate;
   filter: grayscale(1) contrast(100%);
 }
 
 .person.card .socials {
-  position: absolute;
+  /*! position: absolute; */
   top: 132px;
-  transition: all .15s .25s;
+  transition: all .15s;
   text-align: center;
   width: 100%;
-  opacity: 0;
+  opacity: .25;
 }
 
 .card:hover .socials,
 .card:focus-within .socials {
-  transform: translateY(2.1ex) scale(1.3);
+  /*! transform: translateY(2.1ex) scale(1.3); */
   opacity: .75;
 }
 
@@ -453,7 +452,6 @@ h1.hero:focus-within a:after {
 .person.card .socials a img {
   width: 1.5ex;
   height: 1.5ex;
-  transform: scale(.9);
   display: inline;
   vertical-align: middle;
   transition: all .1s;
@@ -466,14 +464,18 @@ h1.hero:focus-within a:after {
   opacity: 1;
 }
 
+.person.card .socials a:not([href]) img {
+  visibility: hidden;
+}
+
 .person.card h4,
 .person.card h5 {transition: all .15s .05s; transform-origin: left bottom;}
 
-.person.card h4 {opacity: .5;transform: translateY(1em);}
-.person.card h5 {opacity: .25; font-weight: bolder;}
+.person.card h4 {opacity: .5;transform: translateY(.5em);margin: 0;/*! border: 1px solid; */}
+.person.card h5 {opacity: .25; font-weight: bolder;margin: 1ex 0;}
 
 .person.card:hover h4,
-.person.card:focus-within h4 { opacity: .95; transform: translateY(.75em);}
+.person.card:focus-within h4 { opacity: .95; /*! transform: translateY(.75em); */}
 .person.card:hover h5,
 .person.card:focus-within h5 { opacity: .5;}
 
@@ -545,7 +547,7 @@ h1.hero:focus-within a:after {
 }
 
 .clients li a + small {
-  opacity: 0;
+  opacity: 0.5;
   transition: all .75s cubic-bezier(.7,.32,.28,1.39);
 }
 
@@ -835,14 +837,14 @@ form.show-feedback iframe + button {
   background-color: var(--color-1);
   opacity: 0.05;
   image-rendering: pixelated;
-  transition: 1s .5s cubic-bezier(.65,.05,.36,1), background-position 2s cubic-bezier(0.02, 0.79, 0.64, 0.98);
+  transition: 5s cubic-bezier(.65,.05,.36,1), background-position 2s cubic-bezier(0.02, 0.79, 0.64, 0.98);
   filter: grayscale(1);
   mix-blend-mode: multiply;
 }
 
 #home.parallax:hover::after {
   opacity: .5;
-  background-position: 32%; 
+  transition-duration: 1s;
 }
 
 #home.parallax::after {
