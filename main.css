@@ -774,8 +774,7 @@ form.show-feedback iframe + button {
 /* footer things */
 
 #footer {
-  min-height: 40em;
-  padding-bottom: 65em;
+  min-height: 20em;
   position: relative;
 }
 
@@ -799,16 +798,6 @@ form.show-feedback iframe + button {
 
 #footer nav + div {
   flex: 1;
-}
-
-#footer::after {
-  content: '';
-  height: 65%;
-  background: black;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: #000 url(img/byeeee.png) center no-repeat fixed;
 }
 
 /* parallax things */
