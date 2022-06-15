@@ -331,6 +331,7 @@ h1.hero a {
   color: black;
   overflow: hidden;
   text-decoration-color: black;
+  vertical-align: top;
 }
 
 h1.hero a em {
