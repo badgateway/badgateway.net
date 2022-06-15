@@ -707,7 +707,7 @@ form label :invalid + span::after {
 
 form button {
   background-color: #fff2f2;
-  border: none;
+  border: 3px solid transparent;
   border-radius: .5ex;
   color: var(--color-5);
   cursor: pointer;
@@ -716,7 +716,12 @@ form button {
   margin: 4em auto;
   padding: 1ex 1em;
   transition: all .2s;
+  
+}
 
+form:not(:invalid) button:hover {
+  box-shadow: 0 0 0 3px white;
+  border-color: var(--color-5);
 }
 
 form:invalid button[type="submit"] {
@@ -754,7 +759,7 @@ form.show-feedback iframe {
 
 form iframe + button {
   position: absolute;
-  left: 0;
+  left: .5ex;
   top: .5ex;
   color: var(--sectionColor)!important;
   opacity: 0;
