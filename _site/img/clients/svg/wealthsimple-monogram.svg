@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="21.41"
+   viewBox="0 0 36.610001 21.41"
+   width="36.610001"
+   version="1.1"
+   id="svg7515"
+   sodipodi:docname="wealthsimple-monogram.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7519" />
+  <sodipodi:namedview
+     id="namedview7517"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.8341969"
+     inkscape:cx="96.5"
+     inkscape:cy="12.34103"
+     inkscape:current-layer="g7513" />
+  <g
+     fill="#ffffff"
+     fill-rule="evenodd"
+     transform="translate(0,-3.24)"
+     id="g7513">
+    <path
+       d="m 28.16,3.27 v 0.27 c 0.767077,0.1832252 1.439859,0.6424255 1.89,1.29 0.466622,0.8168418 0.688766,1.750538 0.64,2.69 -6.25e-4,1.2347397 -0.189461,2.4621702 -0.56,3.64 -0.435639,1.374724 -0.980716,2.712336 -1.63,4 L 27.74,16.83 24,7.75 C 23.817124,7.3174419 23.663446,6.8731127 23.54,6.42 23.442074,6.0741635 23.381726,5.718776 23.36,5.36 23.34105,4.9063789 23.503274,4.4638429 23.810913,4.1299423 24.118552,3.7960418 24.546348,3.5981898 25,3.58 V 3.31 H 13.72 v 0.27 c 0.383804,0.070196 0.754707,0.1983265 1.1,0.38 0.352307,0.2369545 0.649111,0.5474048 0.87,0.91 0.389592,0.6125874 0.724229,1.2584379 1,1.93 l 1.76,4.2 -3.18,6.29 -4.74,-11 C 10.407996,6.0702062 10.307528,5.8391311 10.23,5.6 10.189571,5.4260147 10.166128,5.2485156 10.16,5.07 10.157439,4.7351535 10.278502,4.4111324 10.5,4.16 10.773348,3.8649359 11.117574,3.6446312 11.5,3.52 V 3.27 H 0 v 0.27 c 0.93523485,0.2855742 1.782008,0.8053415 2.46,1.51 0.8897818,1.0234842 1.618166,2.1767592 2.16,3.42 l 7.28,16.18 h 0.3 l 6.56,-13 5.61,13 h 0.3 l 6.67,-14.4 C 32.046703,8.6100286 32.939204,7.0565402 34,5.62 34.692912,4.7196032 35.586685,3.9936264 36.61,3.5 V 3.24 h -8.45 z"
+       id="path7489" />
+  </g>
+</svg>
