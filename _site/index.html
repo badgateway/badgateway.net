@@ -319,7 +319,7 @@
   <!-- contact -->
   <section id="contact">
     <h1>Work with us</h1>
-    <h5>Drop us <a href="mailto:info@badgateway.net">an email</a>, schedule <a href="https://calendly.com/evert-bg/30min" target="form-feedback">a 30-minute chat</a> or use the form below :)</h5>
+    <h5>Drop us <a href="mailto:info@badgateway.net?subject=I've got a project!">an email</a>, schedule <a href="https://calendly.com/evert-bg/30min" target="form-feedback">a 30-minute chat</a> or use the form below :)</h5>
 
       <form
         action="https://getform.io/f/9c0d6c55-5b19-49b5-8fef-6f0366ee9b6a"
@@ -451,6 +451,11 @@
       ticking = true;
     }
   });
+
+  window.addEventListener('load', function(){
+    document.body.removeAttribute('unresolved')
+  });
+
 
   function showFormFeedback() {
     form.classList.add('show-feedback');
