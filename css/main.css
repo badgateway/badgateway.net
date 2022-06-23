@@ -304,6 +304,7 @@ section > * {
   flex-direction: column;
   display: flex;
   align-items: center;
+  flex-grow: ;
 }
 
 .flex-row li ul {
@@ -379,12 +380,27 @@ h1.hero:focus-within a:after {
   min-width: 14rem;
   max-width: 24rem;
   padding: 1rem;
+  align-self: stretch;
+  transition: all .25s;
 }
-.services strong { transition: all .2s;}
+
+
+.services:hover > li {
+  opacity: .65;
+}
+
+.services > li:hover {
+  opacity: 1;
+}
+
 .services > li:hover ul li strong {
   background-color: #1e1e1e;
   color: var(--brand-main-color);
+  }
+.services strong { 
+  transition: all .25s .1s;
 }
+
 
 /* about section */
 
@@ -848,7 +864,7 @@ form.show-feedback iframe + button {
   background-color: var(--color-1);
   opacity: 0.05;
   image-rendering: pixelated;
-  transition: 5s cubic-bezier(.65,.05,.36,1), background-position 2s cubic-bezier(0.02, 0.79, 0.64, 0.98);
+  transition: 5s 10s cubic-bezier(.65,.05,.36,1), background-position 2s cubic-bezier(0.02, 0.79, 0.64, 0.98);
   filter: grayscale(1);
   mix-blend-mode: multiply;
 }
