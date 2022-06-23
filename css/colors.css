@@ -10,12 +10,12 @@
 
 :root {
   --brand-main-color: #FF0;
-  --color-1: #FF0;
-  --color-2: #a0a0a0;
-  --color-3: #818181;
-  --color-4: #4c4c4c;
-  --color-5: #363636;
-  --color-6: rgb(23, 23, 23);
+  --color-1: #F1F1F1;
+  --color-2: #dadada;
+  --color-3: #eaeaea;
+  --color-4: #9f9f9f;
+  --color-5: #565656;
+  --color-6: #cfcfcf;
 }
 
 /* setting the background color for every <section> to it's color variable */
@@ -24,12 +24,12 @@ main section {
 }
 
 /* setting color variable per section */
-#home     {color: #000; --sectionColor: var(--color-1);  background-blend-mode: darken;background-attachment: fixed;background-size: cover;background-position: center;justify-content: space-around;padding: 0;}
-#services {color: #000; --sectionColor: var(--color-2); }
-#about    {color: #000; --sectionColor: var(--color-3); }
-#projects {color: #fffb; --sectionColor: var(--color-4); }
+#home     { --sectionColor: var(--color-1);  background-blend-mode: darken;background-attachment: fixed;background-size: cover;background-position: center;justify-content: space-around;padding: 0;}
+#services { --sectionColor: var(--color-2); }
+#about    { --sectionColor: var(--color-3); }
+#projects { --sectionColor: var(--color-4); }
 #contact  {color: #fffb; --sectionColor: var(--color-5); }
-#footer   {color: #fffb; --sectionColor: var(--color-6); }
+#footer   { --sectionColor: var(--color-6); }
 
 #projects a,
 #contact a,

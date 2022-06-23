@@ -1,3 +1,33 @@
+/* roboto-mono-regular - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-mono-600 - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-mono-700 - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-mono/roboto-mono-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -89,7 +119,7 @@ a {
 
 button, .button {
   background: black;
-  color: var(--brand-main-color);
+  color: white;
   border: none;
   font-family: inherit;
   font-size: inherit;
@@ -113,6 +143,8 @@ em {
 
 strong {
   letter-spacing: -1px;
+  /*! background: black; */
+  /*! color: var(--brand-main-color); */
 }
 
 strong > strong {
@@ -154,7 +186,7 @@ header {
 }
 
 main {
-  color: black;
+  color: #1e1e1e;
   height: 100%;  
   scroll-behavior: smooth;
   perspective: 1px;
@@ -329,7 +361,16 @@ h1.hero:hover a:after,
 h1.hero:focus-within a:after {
   /*! opacity: 1; */
   width: 100%;
-  color: var(--color-1);
+  color: var(--brand-main-color);
+}
+
+#home .button {
+  color: var(--brand-main-color);
+  transform: scale(.9);
+}
+
+#home .button:hover {
+  transform: scale(1);
 }
 
 /* services section */
@@ -339,8 +380,17 @@ h1.hero:focus-within a:after {
   max-width: 24rem;
   padding: 1rem;
 }
+.services strong { transition: all .2s;}
+.services > li:hover ul li strong {
+  background-color: #1e1e1e;
+  color: var(--brand-main-color);
+}
 
 /* about section */
+
+.team {
+  max-width: 45em;
+}
 
 .person.card {
   width: 230px;
@@ -381,7 +431,7 @@ h1.hero:focus-within a:after {
   transform: scale(2) translateY(2%);
   transition: transform .25s ease-in-out, opacity .2s;
   filter: grayscale(1) contrast(100%);
-  opacity: .5;
+  opacity: .75;
 }
 
 .person.card:hover figure img,
@@ -389,7 +439,7 @@ h1.hero:focus-within a:after {
   transform: scale(1.8) translateY(2%);
   opacity: .9;
   animation: fade .3s infinite alternate;
-  filter: grayscale(1) contrast(100%);
+  filter: grayscale(.25) contrast(100%);
 }
 
 .person.card .socials {
@@ -456,13 +506,15 @@ h1.hero:focus-within a:after {
   filter: grayscale(1) brightness(25%) contrast(100%);
   mix-blend-mode: multiply;
   opacity: .45;
+  /*! width: 200px; */
 }
 
 .technologies li:hover svg {
   transform: scale(.65);
   transition-duration: .15s;
   transition-delay: 0;
-  opacity: .8;
+  opacity: 1;
+  filter: unset;
 }
 
 .technologies li small {
@@ -477,7 +529,7 @@ h1.hero:focus-within a:after {
 /* Clients / projects section */
 
 .clients {
-  max-width: 40em;
+  max-width: 45em;
 }
 
 .clients a {
@@ -502,12 +554,12 @@ h1.hero:focus-within a:after {
 
 .clients li a img {
   opacity: .5;
-  filter: none;
   width: 192px;
   height: 192px;
   transform: scale(.75);
   transition: transform .2s;
   mix-blend-mode: unset;
+  filter: invert(1);
 }
 
 .clients li a:hover img {
@@ -528,7 +580,7 @@ h1.hero:focus-within a:after {
 /* Contact section */
 form {
   width: 100%;
-  max-width: 30em;
+  max-width: 35em; 
   position: relative;
   z-index: 2;
 }
@@ -540,6 +592,7 @@ form fieldset {
   grid-row-gap: 1em;
   position: relative;
   margin: 0;
+  max-width: ;
 }
 
 @media 
@@ -757,10 +810,11 @@ form.show-feedback iframe + button {
   display: inline;
   margin: 0ex;
   transform: scale(.6);
+  filter: invert(.8);
 }
 
 #footer nav li a {
-  color: white;
+  color: initial;
   font-size: small;
 }
 
