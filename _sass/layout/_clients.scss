@@ -1,0 +1,23 @@
+section#clients {
+  >.container>.row:not(#scrolling-clients) {
+    align-items: center;
+    gap: 4em 1em;
+    justify-content: space-around;
+  }
+
+  a[href] {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    img.client-logo {
+      filter: invert(1);
+      opacity: .4;
+      transition: opacity .2s;
+    }
+    &:hover img.client-logo {
+      opacity: .65;
+    }
+  }
+}

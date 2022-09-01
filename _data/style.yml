@@ -1,0 +1,11 @@
+#Color Customization
+highlight: "#54bfff"
+#white: "#FF0000"
+#black: "#000"
+
+#Image Customization
+#header-image: "https://images.unsplash.com/photo-1494537145451-0503649ed805?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+header-image: "https://images.unsplash.com/photo-1551044514-e7fdee420512?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+contact-image: "/assets/img/contact/world_map.svg"
+#Font Awesome icon for portfolio grid when an item is hovered over
+#portfolio-icon: fas fa-expand-arrows-alt fa-3x #default: fas fa-plus fa-3x
