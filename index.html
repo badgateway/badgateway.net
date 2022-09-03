@@ -1,4 +1,6 @@
 ---
+layout: default
+title: Bad Gateway
 ---
 <main class="home">
   <!-- home -->
@@ -369,56 +371,10 @@
   </section>
 
 </main>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JSBKK4RSYN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JSBKK4RSYN');
-</script>
 
 <script>
-  let lastKnownScrollPosition = 0;
-  let ticking = false;
-
-  const header = document.querySelector('header');
   const form = document.querySelector('form');
-  const iframe = document.querySelector('iframe');
   const calendarLink = document.querySelector('a[href="https://calendly.com/evert-bg/30min"]');
-  const closebtn = document.querySelector('button[type="button"]');
-  const menubtn = document.querySelector('button.toggle-menu');
-
-  const menuLinks = document.querySelectorAll('nav a');
-
-  function resizeHeader(scrollPos) {
-
-      if(scrollPos > 200) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-
-  }
-
-  document.addEventListener('scroll', function(e) {
-    lastKnownScrollPosition = (document.scrollingElement).scrollTop;
-
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        resizeHeader(lastKnownScrollPosition);
-        ticking = false;
-      });
-
-      ticking = true;
-    }
-  });
-
-  window.addEventListener('load', function(){
-    document.body.removeAttribute('unresolved')
-  });
-
 
   function showFormFeedback() {
     form.classList.add('show-feedback');
@@ -427,19 +383,5 @@
 
   form.addEventListener('submit', showFormFeedback);
   calendarLink.addEventListener('click', showFormFeedback);
-
-  closebtn.addEventListener('click', function() {
-    form.classList.remove('show-feedback');
-  })
-
-  menubtn.addEventListener('click', function() {
-    header.classList.toggle('show-menu');
-  });
-
-  for (const link of menuLinks) {
-    link.addEventListener('click', function() {
-      header.classList.remove('show-menu');
-    })
-  }
 
 </script>
