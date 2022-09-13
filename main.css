@@ -163,7 +163,7 @@ header {
   /*! left: 0; */
   width: 100%;
   z-index: 1;
-  background: transparent;
+  background-color: var(--brand-main-color);
   backdrop-filter: blur(5px);
   box-shadow: 0 -1px 2px 0 #0006;
   transition: .5s 1s, opacity .5s 1s, font-size .25s;
@@ -857,11 +857,13 @@ form.show-feedback iframe + button {
   min-height: 10em;
   gap: 1em;
   height: 100%;
+  background-color: #ffffbf;
 }
 
 #post .post-container {
   max-width: 800px;
   margin: auto;
+  height: 100%;
 }
 
 #post .read-more {
