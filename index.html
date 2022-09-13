@@ -373,6 +373,7 @@ title: Bad Gateway
 </main>
 
 <script>
+  const closebtn = document.querySelector('button[type="button"]');
   const form = document.querySelector('form');
   const calendarLink = document.querySelector('a[href="https://calendly.com/evert-bg/30min"]');
 
@@ -383,5 +384,9 @@ title: Bad Gateway
 
   form.addEventListener('submit', showFormFeedback);
   calendarLink.addEventListener('click', showFormFeedback);
+
+  closebtn.addEventListener('click', function() {
+    form.classList.remove('show-feedback');
+  });
 
 </script>

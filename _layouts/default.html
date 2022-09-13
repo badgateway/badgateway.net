@@ -34,7 +34,6 @@
       let ticking = false;
 
       const header = document.querySelector('header');
-      const closebtn = document.querySelector('button[type="button"]');
       const menubtn = document.querySelector('button.toggle-menu');
 
       const menuLinks = document.querySelectorAll('nav a');
@@ -63,10 +62,6 @@
       window.addEventListener('load', function(){
         document.body.removeAttribute('unresolved')
       });
-
-      closebtn.addEventListener('click', function() {
-        form.classList.remove('show-feedback');
-      })
 
       menubtn.addEventListener('click', function() {
         header.classList.toggle('show-menu');
