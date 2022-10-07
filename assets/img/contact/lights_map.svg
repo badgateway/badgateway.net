@@ -11,7 +11,7 @@
    viewBox="0 0 1469 620"
    xml:space="preserve"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="world_map.svg"
+   sodipodi:docname="lights_map.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
      inkscape:snap-page="true" /><g
      id="g12963"
      inkscape:label="countries"
-     style="display:inline"><path
+     style="display:none"><path
        id="kalimantan"
        d="m 1242.9787,367.44265 -3.631,9.75447 -19.6958,4.75363 -5.8945,-4.94467 -2.8608,0.5619 5.3444,14.74409 8.0009,0.64055 10.6731,2.88814 v 2.88813 l 4.8886,-0.64056 7.1205,-7.04614 v -5.76503 l 4.0083,-5.76503 4.4484,0.64055 -5.3443,-8.0126 -0.8174,-5.15818 z"
        style="fill:#f2f2f2;fill-opacity:0.211112;stroke-width:1" /><path
@@ -1036,7 +1036,7 @@
        style="fill:#f2f2f2;fill-opacity:0.211112;stroke-width:1" /></g><g
      id="g5907-4"
      transform="matrix(2.5927449,0,0,2.5941187,-1119.8813,-313.29496)"
-     style="display:inline;stroke-width:0.385589"><ellipse
+     style="stroke-width:0.385589"><ellipse
        style="opacity:0.521793;fill:#46baff;fill-opacity:1;stroke-width:1.40632;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;filter:url(#filter5130-2);stop-color:#000000"
        id="ellipse5903-7"
        cy="194.30946"

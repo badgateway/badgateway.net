@@ -15,11 +15,11 @@ section#contact {
 
   &::after{
     background-color: $gray-900;
-    background-image: url("#{$contact-image}");
+    background-image: url("/assets/img/contact/world_map.svg"); /*, url("/assets/img/contact/lights_map.svg");*/
     background-repeat: repeat-x;
     background-position-y: center;
-    background-position-x: 0px;
-    background-size: 1469px 720px;
+    background-position-x: 0px, -15px;
+    background-size: 1469px 620px, 1499px 620px;
     animation: globe 120s linear infinite forwards;
   }
 
@@ -34,9 +34,10 @@ section#contact {
     z-index: -1;
   }
 
-  &:hover::after{
-    animation-play-state: paused;
-  }
+  // &:hover::after{
+  //   animation-play-state: paused;
+  // }
+
   .section-heading {
     color: $white;
   }
@@ -81,6 +82,6 @@ section#contact {
 
 @keyframes globe {
   to {
-    background-position-x: 1469px;
+    background-position-x: 1468px, 1498px;
   }
 }
