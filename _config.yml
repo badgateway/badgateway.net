@@ -38,6 +38,11 @@ collections:
 
 markdown: kramdown
 
+capsulecrm:
+  ENDPOINT: https://service.capsulecrm.com/service/newlead
+  FORM_ID: d551edbf-f969-4dc8-b6ff-d7132a9727b3
+
+
 # Uncomment following line to use Formspree form ID based URL instead of email based URL
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
 # formspree_form_path: "f/a_form_id"
