@@ -158,15 +158,25 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: Drop us [an email](mailto:info@badgateway.net?subject=I've got a project!), schedule [a 30-minute chat](https://calendly.com/evert-bg/30min) or use the form below :)
+    text: Drop us [an email](mailto:info@badgateway.net?subject=I've got a project!), schedule [a 30-minute chat](https://calendly.com/richardswitzer/30min) or use the form below :)
     section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
+    firstname: "First name (required)"
+    firstname-validation: "Please enter your fist name."
+    lastname: "Last name (required)"
+    lastname-validation: "Please enter your last name."
+    jobtitle: "Job title (required)"
+    jobtitle-validation: "Please enter a job title."
+    organisation: "Organisation (required)"
+    organisation-validation: "Please enter an organisation name."
+    city: "City (required)"
+    city-validation: "Please enter a city name."
+    country: "Country (required)"
+    country-validation: "Please enter a country name."
+    email: "Email (required)"
     email-validation: "Please enter your email address."
     phone: "Phone Number"
     phone-validation: "Please enter your phone number."
-    message: "Message*"
+    message: "Message (required)"
     message-validation: "Please enter a message."
     subject: "Contact Form Submission"
     submit: "Send Message"
