@@ -1,0 +1,59 @@
+title: OUR TEAM
+text: Lorem ipsum dolor sit amet consectetur.
+subtext: (optional) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+section: team
+people:
+  - name: Evert Pot
+    role: Founder, Developer
+    image: /assets/img/team/evert-color.png
+    social:
+      - url: https://twitter.com/evertp
+        icon: fab fa-twitter
+      - url: https://linkedin.com/in/evert-pot
+        icon: fab fa-linkedin-in
+      - url: https://github.com/evert
+        icon: fab fa-github
+  - name: Phil Schwyter
+    role: Partner, Developer
+    image: /assets/img/team/phil-color.png
+    social:
+      - url: https://github.com/pschwyter
+        icon: fab fa-github
+      - url: https://linkedin.com/in/philippeschwyter/
+        icon: fab fa-linkedin-in
+  - name: Michael Humiston
+    role: Partner, Developer
+    image: /assets/img/team/mike-color.png
+    social:
+      - url: https://github.com/mhum
+        icon: fab fa-github
+      - url: https://linkedin.com/in/michaelhumiston
+        icon: fab fa-linkedin-in
+  - name: Richard Switzer
+    role: Partner, Leads developer
+    image: /assets/img/team/richard-color.png
+    social:
+      - url: https://medium.com/@rswitzer
+        icon: fab fa-medium
+      - url: https://www.linkedin.com/in/rswitzer
+        icon: fab fa-linkedin-in
+  - name: Becky Pollard
+    role: Developer
+    image: /assets/img/team/becky-color.png
+    social:
+      - url: http://github.com/beckypollard
+        icon: fab fa-github
+  - name: Syed Kabir
+    role: Developer
+    image: /assets/img/team/syed-color.png
+    social:
+      - url: https://github.com/syedfkabir
+        icon: fab fa-github
+  - name: Sibrand Hoekstra
+    role: Developer
+    image: /assets/img/team/siep-color.png
+    social:
+      - url: http://twitter.com/ikbensiep
+        icon: fab fa-twitter
+      - url: http://github.com/ikbensiep
+        icon: fab fa-github

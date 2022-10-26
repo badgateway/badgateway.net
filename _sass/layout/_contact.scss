@@ -15,7 +15,8 @@ section#contact {
 
   &::after{
     background-color: $gray-900;
-    background-image: url("/assets/img/contact/world_map.svg"); /*, url("/assets/img/contact/lights_map.svg");*/
+    background-image: url("/assets/img/contact/world_map.svg");
+    background-attachment: fixed;
     background-repeat: repeat-x;
     background-position-y: center;
     background-position-x: 0px, -15px;
