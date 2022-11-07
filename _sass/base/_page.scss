@@ -69,3 +69,14 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+// Add a pseudo element to push up the header on elements
+// we want to link to using #links
+h2[id]::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}

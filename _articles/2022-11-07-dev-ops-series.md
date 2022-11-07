@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Dev Ops Series
+title: Accelerating Your Release Cycles
 author: Michael
 ---
 
@@ -8,10 +8,12 @@ As a web application moves from the MVP phase to the finding product-market fit 
 
 <!--more-->
 
-This is a series of four articles around aspects of continuous delivery specifically targeted at teams that are building applications in the post-MVP phase while trying to find product-market fit. These topics are specifically focused on helping speed up the iteration and learning cycle.
-- Monitoring and Observability
-- Feature Flags
+#### Series Overview
+
+This is a series of four topics around aspects of continuous delivery specifically targeted at teams that are building applications in the post-MVP phase while trying to find product-market fit. These topics are specifically focused on helping speed up the iteration and learning cycle.
+- [Monitoring and Observability](/articles/monitoring-observability-feature-flags#monitoring-and-observability)
+- [Feature Flags](/articles/monitoring-observability-feature-flags#feature-flags)
 - Small Releases & Quick Rollbacks
 - Automated Testing
 
-From a more technical perspective, [The Twelve-Factor App](https://12factor.net) is a great resource for architecting your web application for scalability. Many of the topics discussed in this series of posts will assume or rely on these factors existing in your web application already.
+From a more technical perspective, [The Twelve-Factor App](https://12factor.net) is a great resource for architecting your web application and release process for scalability. Many of the topics discussed in this series of posts will assume or rely on these factors existing in your web application already. If your application doesn't adhere to The Twelve-Factor App but your application and processes would benefit from the topics discussed in these posts, then it's time to think about improving the architecture of your apps.
