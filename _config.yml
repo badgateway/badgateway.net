@@ -13,7 +13,7 @@
 
 themeurl: https://github.com/raviriley/agency-jekyll-theme
 
-url    : "https://badgateway.net" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://www.staging.badgateway.net" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Bad Gateway
