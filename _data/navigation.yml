@@ -23,6 +23,8 @@ en: &DEFAULT_EN
       section: team
     - title: "Contact"
       section: contact
+    - title: "Articles"
+      url: /articles
 
 en-US:
   <<: *DEFAULT_EN
