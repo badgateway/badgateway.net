@@ -35,6 +35,11 @@ collections:
   customers:
     output: true
     permalink: /:collection/:title
+  articles:
+    output: true
+    permalink: /articles/:title
+
+excerpt_separator: <!--more-->
 
 markdown: kramdown
 

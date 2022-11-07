@@ -44,7 +44,7 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
+  {% if page.layout == "page" or page.layout == "article" %}
   <style>
     #pagecontainer {
       padding-top: 150px;

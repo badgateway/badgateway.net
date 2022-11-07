@@ -73,7 +73,7 @@
     {% endif %}
   </div>
 </footer>
-{% if page.layout == "page" %}
+{% if page.layout == "page" or page.layout == "article" %}
 <script>
   fixPageShort();
   function fixPageShort() {
