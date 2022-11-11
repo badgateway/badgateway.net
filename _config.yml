@@ -15,7 +15,7 @@ theme: jekyll-agency
 themeurl: https://github.com/raviriley/agency-jekyll-theme
 
 url    : "https://badgateway.net" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Bad Gateway
 email      : info@badgateway.net #this is also the email contact forms will go to
@@ -32,6 +32,8 @@ analytics:
 
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:title
   customers:
     output: true
     permalink: /:collection/:title
