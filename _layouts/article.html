@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<div class="article-container">
+<div class="container" id="article">
   <h1 class="title">{{page.title}}</h1>
   <div>
     <span class="publish-date">{{ page.date | date: "%B %d, %Y" }}</span>
@@ -9,7 +9,10 @@ layout: page
   </div>
   <hr>
 
-  <div>
+  <div class="article-content">
     {{content}}
   </div>
+
+  {% include blog-headlines.html %}
+
 </div>
