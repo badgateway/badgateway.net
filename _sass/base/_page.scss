@@ -31,15 +31,20 @@ h6 {
 
 .page-section {
   padding: 100px 0;
+  p, ul {
+    font-size: 1.2rem;
+    line-height: 1.75;
+  }
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
   }
   h3.section-subheading {
-    font-size: 16px;
+    font-size: 1.4rem;
     font-weight: 400;
     font-style: italic;
+    line-height: 1.75;
     margin-bottom: 75px;
     text-transform: none;
     @include serif-font;
