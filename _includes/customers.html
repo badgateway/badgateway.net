@@ -27,7 +27,7 @@
 
       {% for customer in site.customers %}
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#c{{ forloop.index }}">
+          <a class="portfolio-link" href="/{{ customer.collection }}/{{customer.slug}}">
             <div class="portfolio-hover">
               <!-- <div class="portfolio-hover-content">
                 <i class="{{ site.data.style.portfolio-icon | default: "fas fa-plus fa-3x" }}"></i>
@@ -41,7 +41,7 @@
             <h4><strong>{{ customer.title }}</strong> &ndash; {{ customer.subtitle }}</h4>
             <p class="text-muted">{{ customer.teaser }}</p>
             <hr />
-            <a class="btn btn-primary" data-toggle="modal" href="#c{{ forloop.index }}">read more</a>
+            <a class="btn btn-primary" href="{{ customer.collection }}/{{ customer.slug }}">read more</a>
           </div>
         </div>
     {% endfor %}
