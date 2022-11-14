@@ -2,7 +2,6 @@
 layout: page
 title: Articles
 ---
-<h1>Recent Articles</h1>
 
 <div class="article-container">
   {% for article in site.articles reversed %}
