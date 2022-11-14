@@ -7,9 +7,18 @@ header.masthead {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  background-color: #020202;
+
+  &.articles {
+    background-position: center -400px;
+  }
+
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+    p {
+      text-shadow: 0 2px 20px black;
+    }
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
