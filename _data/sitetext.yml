@@ -11,12 +11,11 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: API development, Web apps, and DevOps training
+    title: API development, Web apps, and DevOps
     text: Bad Gateway
     button: LFG
     buttonlink: "#services"
     
-
   services:
     title: "Our services"
     text: "We help companies rapidly modernize their tech stack and accelerate product development while ensuring staff is fully trained and supported to internalize the software and processes we provide."
@@ -28,15 +27,14 @@ en: &DEFAULT_EN
       - title: "Consulting & Training"
         desc: "Modernize your tech stack and upskill your teams. We'll work with you to figure out technical and product requirements with a focus on continuous delivery. Training and consulting your own programming staff."
         icon: fas fa-chalkboard-teacher
-      - title: "[DevOps](https://en.wikipedia.org/wiki/Markdown)"
+      - title: "DevOps"
         desc: "DevOps is both a set of tools and practices as well as an organizational approach to integrating software development (Dev) with your IT operations team (Ops). "
         icon: fas fa-laptop
 
   portfolio:
     title: "Open Source Projects"
-    text: "Something about giving back to the community? Or being huge nerds? \n\n **TODO**: add website links to projects"
+    text: ""
     section: portfolio
-    closebutton: "Close Project"
 
   timeline:
     title: ""
@@ -66,14 +64,14 @@ en: &DEFAULT_EN
 
   about:
     title: "About Us"
-    text: "in a  nutshell"
+    text: ""
     body: "Bad Gateway is a Toronto-based agency focusing on API development, web apps, and DevOps training. Founded by exceptionally talented former Silicon Valley engineers, our goal is to help companies rapidly modernize their tech stack and **accelerate product development** while ensuring staff is fully trained and supported to internalize the software and processes we provide. If you’re finding it incredibly expensive or downright impossible to hire top-tier backend and DevOps engineers, Bad Gateway may be your solution. "
     section: about
 
   clients: #clients is a section with client logos (not to be confused with customers, which are more abstract personas)
     section: clients
     title: Our Clients
-    subtitle: "oh yeah"
+    subtitle: ""
     max-height: 50px
     horizontal-scrolling: "" #"yes/no"
     list:
@@ -107,7 +105,7 @@ en: &DEFAULT_EN
   customers: 
     section: customers
     title: "Our Customers"
-    subtitle: "Does this sound like you?"
+    subtitle: ""
 
   contact:
     title: "Contact Us"
