@@ -34,6 +34,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:title
+    sort_by: order
   customers:
     output: true
     permalink: /:collection/:title
