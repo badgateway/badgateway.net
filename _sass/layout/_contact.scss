@@ -16,11 +16,10 @@ section#contact {
   &::after{
     background-color: $gray-900;
     background-image: url("/assets/img/contact/world_map.svg");
-    background-attachment: fixed;
     background-repeat: repeat-x;
     background-position-y: center;
-    background-position-x: 0px, -15px;
-    background-size: 1469px 620px, 1499px 620px;
+    background-position-x: 0px;
+    background-size: 1469px 620px;
     animation: globe 120s linear infinite forwards;
   }
 
@@ -28,16 +27,12 @@ section#contact {
     background-image: 
       linear-gradient(#212529 50%, transparent 50%), 
       linear-gradient(90deg, #212529 50%, transparent 50%), 
-      radial-gradient(circle at center, transparent, transparent 30%, #212529 60%);
+      radial-gradient(circle at center, transparent, transparent 30%, #212529 50%);
     z-index: -1;
     background-repeat: repeat;
     background-size: 4px 4px, 4px 4px, 100%;
     z-index: -1;
   }
-
-  // &:hover::after{
-  //   animation-play-state: paused;
-  // }
 
   .section-heading {
     color: $white;
