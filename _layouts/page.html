@@ -9,6 +9,57 @@ document.getElementById("page-top").className="bg-light";
 </script>
 {% endif %}
 
+<!-- pages under /portfolio and /customers -->
+{% if page.collection or page.title == 'Articles' %}
+<header class="masthead {{ page.collection }} {{ page.title }}" style="background-image: url('{{ page.image }}')">
+  <div class="container">
+    <div class="intro-text">
+      
+      {% if page.collection == 'articles' or page.title == 'Articles' %}
+        <div class="intro-lead-in">
+          <p>Bad Gateway Blog</p>
+        </div>
+        
+        <div class="intro-heading text-uppercase">
+          <p>Recent articles</p>
+        </div>
+        
+      {% else %}
+      <div class="intro-lead-in">
+        <p>{{ page.title }}</p>
+      </div>
+      <div class="intro-heading text-uppercase">
+        <p>{{ page.subtitle}}</p>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</header>
+
+<section class="page-section">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+<section class="page-section bg-light">
+  <div class="container">
+    {% include get-in-touch.html %}
+  </div>
+</section>
+
+{% else %}
+<!-- pages like 404.html, thankyou.html -->
 <div class="container" id="pagecontainer">
-{{ content }}
+    {{ content }}
 </div>
+{% endif %}
+
+
+
+<script>
+  const images = ["keyboard-1.jpg", "keyboard-2.jpg", "keyboard-3.jpg", "keyboard-4.jpg", "traktor.jpg", "keyboard-macro.jpg"];
+  const image = new Image();
+  image.src = '/assets/img/illustration/' + images[Math.floor(Math.random() * 6)];
+  document.querySelector('.masthead').style.backgroundImage = `url(${image.src})`;
+</script>
