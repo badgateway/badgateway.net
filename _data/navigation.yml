@@ -15,16 +15,14 @@ en: &DEFAULT_EN
       section: services
     - title: "Portfolio"
       section: portfolio
-    # - title: "Timeline"
-    #   section: timeline
+    - title: "Articles"
+      section: articles
     - title: "About"
       section: about
     - title: "Team"
       section: team
     - title: "Contact"
       section: contact
-    - title: "Articles"
-      url: /articles
 
 en-US:
   <<: *DEFAULT_EN
