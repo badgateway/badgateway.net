@@ -1,4 +1,6 @@
 ---
+layout: page
+order: 2
 caption: #what displays in the portfolio grid:
   title: Ketting
   subtitle: A blazing fast generic hypermedia client for Javascript

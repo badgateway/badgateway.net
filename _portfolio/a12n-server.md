@@ -1,16 +1,19 @@
 ---
+layout: page
+order: 3
+
 caption: #what displays in the portfolio grid:
-  title: Auth-o-Matic
+  title: a12n-server
   subtitle: "A complete Authentication system for those that don't want to build it themselves."
   thumbnail: /assets/img/portfolio/a12n-server-login-screenshot.png
   emoji: 🤖
-  
+
 #what displays when the item is clicked:
-title: Auth-o-matic 
-subtitle: "A ready-to-launch User and Authentication system for those that don't want to build it. (Initial idea was: Kwik-e-Auth)"
+title: a12n-server
+subtitle: "A ready-to-launch User and Authentication system for those that don't want to build it."
 image: /assets/img/portfolio/a12n-server-login-screenshot.png #main image, can be a link or a file in assets/img/portfolio
 alt: Image of a robot
-
+website: https://github.com/curveball/a12n-server
 ---
 
 A ready-to-launch User and Authentication server for those that don't want to build it. The project implements OAuth2 standards where applicable. A12n requires MySQL and Node.js 14.x
