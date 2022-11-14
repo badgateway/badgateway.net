@@ -1,0 +1,33 @@
+<section id="articles" class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{% if page.collection == 'articles' %} More {% endif %} Articles</h2>
+        <h3>&nbsp;</h3>
+      </div>
+    </div>
+    
+
+    {% for article in site.articles reversed %}
+      {% unless article.draft %}
+
+        {% if forloop.index < 6 %}
+        <div>
+          <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+          <div>
+            <span class="publish-date">{{ article.date | date: "%B %d, %Y" }}</span>
+            <span>- {{ article.author }}</span>
+          </div>
+          <div>
+          </div>
+        </div>
+        <hr>
+
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+    <div class="text-center">
+      <h4 style="margin-top:2rem"><a href="/articles">Browse Archive...</a></h4>
+    </div>
+  </div>
+</section>
