@@ -29,6 +29,8 @@ people:
         icon: fab fa-linkedin-in
       - url: https://github.com/mhum
         icon: fab fa-github
+      - url: https://michaelhumiston.com/
+        icon: fas fa-globe-americas
   - name: Richard Switzer
     role: Partner, Product and Biz Dev
     image: /assets/img/team/richard-color.png
