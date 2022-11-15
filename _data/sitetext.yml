@@ -13,7 +13,7 @@ en: &DEFAULT_EN
   header:
     title: API development, Web apps, and DevOps
     text: Bad Gateway
-    button: LFG
+    button: things we do
     buttonlink: "#services"
     
   services:
